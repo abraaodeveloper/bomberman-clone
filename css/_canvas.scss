@@ -1,0 +1,57 @@
+canvas{
+    margin: auto;
+    animation: 5s show-game ease-out forwards;
+
+}
+
+p{
+    font-family: sans-serif;
+    color: $secondary-color;
+    font-size: large;
+}
+
+.status-round{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+
+    animation: 5s show-status-road ease forwards;
+
+    p{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        text-align: center;
+        height: min-content;
+        color: $secondary-color;
+    }
+}
+
+@keyframes show-game{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes show-status-road{
+    0%{
+        transform: translateX(-100%) translateY(50%);
+    }
+    20%{
+        transform: translateX(45%) translateY(50%);
+    }
+    80%{
+        transform: translateX(55%) translateY(50%);
+    }
+    100%{
+        transform: translateX(201%) translateY(50%);
+    }
+}
